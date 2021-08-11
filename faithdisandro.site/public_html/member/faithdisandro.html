@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Faith DiSandro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The portfolio page of Faith DiSandro">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+
+<style>
+
+  
+:root {
+  --white: #fff;
+  --marroon: #710000;
+  --lightgrey: #edecec;
+  --grey: #4a4848;
+  --darkgrey: #414040;
+  --black: #000;
+}
+
+.h1animation{
+	color: var(--white);
+  animation-name: name;
+  animation-duration: 5s;
+}
+
+@keyframes name {
+  from {color: var(--marroon);}
+  to {color: var(--lightgrey);}
+}
+
+
+
+.animation{
+  color: var(--white);
+  animation-name: social;
+  animation-duration: 30s;
+}
+
+@keyframes social {
+  from {color: var(--white);}
+  to {color: var(--black);}
+  from {color: var(--black);}
+  to {color: var(--white);}
+}
+
+
+html{box-sizing:border-box}
+*,*:before,*:after{box-sizing:inherit}
+
+body{margin:0}
+
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}
+
+summary{display:list-item}
+
+
+
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
+
+html{overflow-x:hidden}
+h1{font-size:36px}
+h2{font-size:30px}
+
+h5{font-size:18px}
+h6{font-size:16px}
+
+h1,h2,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+hr{border:0;border-top:1px solid;margin:20px 0}
+
+img{max-width: 100%; height: auto; vertical-align: middle}
+a{color:inherit}
+
+.responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+form, table{
+	overflow: scroll;
+}
+
+
+.profileimage{position:relative}
+
+body{
+  color: var(--black);
+  background-color: var(--darkgrey)
+}
+
+
+main, footer{
+	max-width:980px; 
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top:16px;
+    max-width: 1400px
+}
+
+section{
+	padding:0 8px
+}
+
+footer{
+	color: var(--white);
+    background-color: var(--marroon);
+    text-align: center
+}
+
+main:after,main:before,footer:before,footer:after,section:after,section:before{content:"";display:table;clear:both}
+
+
+
+.leftcolumn, .rightcolumn{
+	float: left;
+    width: 100%;
+    padding:0 8px
+}
+
+@media (min-width:601px){
+.leftcolumn{width:33.33333%}
+.rightcolumn{width:66.66666%}}
+
+h1{
+  position:absolute; 
+  left:0; 
+  bottom:0
+}
+
+h2{
+  color: var(--darkgrey);
+  padding-top:16px;
+  padding-bottom:16px
+}
+
+h6{
+  color: var(--marroon);
+}
+
+.percentageBar{
+	border-radius:16px;
+    font-size:12px!important
+}
+
+.ffa{
+	color: var(--marroon);
+	margin-right: 16px
+}
+
+
+.padding{padding:0.01em 16px}
+
+.box{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  padding:0.01em 16px;
+  color:#000;
+  background-color:#edecec;
+  margin-bottom: 16px}
+.box-4{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+  color: #605e5e;
+  background-color:#edecec}
+
+
+.opacity,.hoveropacity:hover{opacity:0.60}
+
+
+
+html,body,h1,h2,h5,h6 {font-family: ariel, sans-serif}
+
+
+</style>
+
+
+<script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+<main>
+
+  <section>
+
+<!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+     <div id="firebaseui-auth-container"></div>
+     <div id="loader"></div>
+
+
+
+    <div class="leftcolumn">
+    
+      <div class="box-4">
+        <div class="profileimage">
+          <img src="fd.jpg" alt="Picture of Faith" class="responsive">
+            <h1 class="h1animation" style="color: var(--grey); padding: 0.01em 16px">Faith DiSandro</h1>
+        </div>
+        
+        
+        <div class="padding">
+          <p><i class="fa fa-home fa-fw ffa" style="font-size: 18px"></i><em>11603 Rancho Heights Rd, Pala, California, 92059</em></p>
+          <p><i class="fa fa-envelope fa-fw ffa" style="font-size: 18px"></i><em>fdisandr@ucsd.edu</em></p>
+          <p><i class="fa fa-phone fa-fw ffa" style="font-size: 18px"></i><em>(951) 972-0506</em></p>
+          <hr>
+          
+          
+          <p style="font-size: 18px"><b><i class="fa fa-desktop fa-fw ffa"></i>Technical Skills</b></p>
+
+           <p>C++</p>
+          <div class="percentageBar" style="background-color: var(--grey)">
+            <div class="percentageBar" style="background-color: var(--marroon); width:80%; position: center">
+              <p style="color: var(--white); text-align: center">80%</p>
+            </div>
+          </div>
+          
+          <p>Java</p>
+          <div class="percentageBar" style="background-color: var(--grey)">
+            <div class="percentageBar" style="background-color: var(--marroon); width:60%; position: center">
+              <p style="color: var(--white); text-align: center">60%</p>
+            </div>
+          </div>
+          
+          <p>HTML/CSS/JavaScript</p>
+          <div class="percentageBar" style="background-color: var(--grey)">
+            <div class="percentageBar" style="background-color: var(--marroon); width:50%; position: center">
+              <p style="color: var(--white); text-align: center">50%</p>
+            </div>
+          </div>
+           
+          <p>C</p>
+          <div class="percentageBar" style="background-color: var(--grey)">
+            <div class="percentageBar" style="background-color: var(--marroon); width:50%; position: center">
+              <p style="color: var(--white); text-align: center">50%</p>
+            </div>
+          </div>
+          
+          
+          
+          <br>
+          <br>    
+          
+<p style="font-size: 18px"><b><i class="fa fa-globe fa-fw ffa"></i>My First Programming Language</b></p>
+<p>My First Programming Language</p>
+<p><code>//My First Program<br>
+#include &lt;iostream&lt;<br>
+
+int main() {<br>
+    std::cout &lt;&lt; "Hello World!";<br>
+    return 0;<br>
+}<br></code></p>
+<br>
+
+
+</div>
+</div>
+        <br>
+     <div class="box">
+        <h2><i class="fa fa-address-book fa-fw ffa"></i>Contact</h2>
+        <div class="padding">
+<br>
+        </div>
+        </div>
+    </div>
+
+    <div class="rightcolumn">
+
+    <div class="box">
+        <h2><i class="fa fa-user fa-fw ffa"></i>About Me</h2>
+        <div class="padding">
+          <p>I am a 25 year old student at the University of California - San Diego. I am currently studying Computer Science and am graduating in June 2021 with my Bachelors.</p><br>
+        </div>
+        </div>
+
+    
+    <div class="box">
+        <h2><i class="fa fa-certificate fa-fw ffa"></i>Summary of Qualifications</h2>
+        <div class="padding">
+          <p>Experience writing code and tests for debugging in different programming languages. Have some research experience and some work experience. Work effectively in a team as well as independently.</p><br>
+        </div>
+        </div>
+    
+    
+    
+      <div class="box">
+        <h2><i class="fa fa-suitcase fa-fw ffa"></i>Work Experience</h2>
+        <div class="padding">
+          <h3 class="opacity"><b>Project Analyst / Pacific Construction Analysts</b></h3>
+          <h4><i class="fa fa-calendar fa-fw ffa"></i>Jan 2015 - <span style="color: var(--white); background-color: var(--marroon); border-radius:4px">Current</span></h4>
+          <p><i>Project Analyst</i></p>
+<ul>
+  <li>Type correspondence, reports, text and other written material from rough drafts, corrected copies, voice recordings, dictation or previous versions, using a computer, word processor, or typewriter.</li>
+    <li>Electronically sort and compile text and numerical data, retrieving, updating, and merging documents as required.</li>
+    <li>Operate computer-aided drafting (CAD) equipment or conventional drafting station to produce designs, working drawings, charts, forms and records.</li>
+    <li>Obtain and assemble data to complete architectural designs, visiting job sites to compile measurements as necessary.</li>
+    <li>Prepare cost estimates, contracts, bidding documents and technical reports for specific projects under an architect's supervision.</li>
+</ul>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      <img src="star.jpg" alt="space">
+      <cite style="color:white">https://www.amazon.com/Life-Behind-Stars-Daniel-Vega/dp/B076R74CV4</cite>
+      <div class="box">
+        <h2><i class="fa fa-suitcase fa-fw ffa"></i>Research Experience</h2>
+        <div class="padding">
+          <h3 class="opacity"><b>Binary Star</b></h3>
+          <p>During my second year at San Diego Mesa College I was lucky enough to be asked by Astronomy professor to take a part of the <strong>AAVSO</strong> (American Association of Variable Star Observers) research project of observing binary stars. As a part of the project each team had to order images from one of the space telescopes and collect data from the photos and analyze the data to find trends in the angles of the two stars to determine whether a star system is binary.</p>
+<iframe src="HJ_750.pdf" title="WDS 07062-0218" style="width:100%; height: 25em">
+</iframe>
+          <hr>
+        </div>
+        
+   
+        <div class="padding">
+          <h3 class="opacity"><b>Exoplanet</b></h3>
+          <p>During my first year at UCSD I was asked to be a part of the research of exoplanets that orbit stars outside of our solar system. The research involved studying photos of one of the stars from one of the space telescopes and observing whether there was a change in light from the star compared to data taken in the past.This change in light can determine wether or not a planet is orbiting the star.</p>
+<aside>
+<p>Exoplanets, also known as extrasolar planets, are planets that are outside of our solar system.</p>
+</aside>
+
+        </div>
+        
+      </div>
+      
+      
+      
+      <img src="UCSDpic.jpg" alt="UCSD">
+      <cite style="color:white">https://library.ucsd.edu/news-events/geisellibrary50thanniversary/</cite>
+      <div class="box">
+        
+        <h2><i class="fa fa-graduation-cap fa-fw ffa"></i>Education</h2>
+        <div class="education">
+<table style="width: 100%">
+<caption>Schools I have attended</caption>
+<colgroup>
+    <col span="2" style="background-color:Dodgerblue">
+    <col style="background-color:yellow">
+    <col span="2" style="background-color:Dodgerblue">
+</colgroup>
+  <tr>
+    <th>School</th>
+    <th>Years</th>
+    <th>Major</th>
+    <th>Type</th>
+    <th>Location</th>
+  </tr>
+  <tr>
+    <td>UCSD</td>
+    <td>2018-2021</td>
+    <td>Computer Science</td>
+    <td>University</td>
+    <td>La Jolla, California</td>
+  </tr>
+  <tr>
+    <td>San Diego Mesa College</td>
+    <td>2015-2018</td>
+    <td>Pre-Engineering</td>
+    <td>Community College</td>
+    <td>San Diego, California</td>
+  </tr>
+  <tr>
+    <td>Elmira College</td>
+    <td>2013-2014</td>
+    <td>Biomedical Engineering</td>
+    <td>Private College</td>
+    <td>Elmira, New York</td>
+  </tr>
+  <tr>
+    <td>Norfork High School</td>
+    <td>2010-2013</td>
+    <td>N/A</td>
+    <td>High School</td>
+    <td>Norfork, Arkansas</td>
+  </tr>
+</table>
+<br>
+  
+</div>
+
+      </div>
+
+    </div>
+    
+  <section>
+
+<main>
+
+<footer>
+  <p>Find me on social media.</p>
+  <a href="https://www.facebook.com/faith.disandro/"><div class="animation"><i class="fa fa-facebook-official hoveropacity"></i></div></a>
+  <a href="https://www.instagram.com/faithdisandro/"><div class="animation"><i class="fa fa-instagram hoveropacity"></i></div></a>
+  <a href="https://www.linkedin.com/in/faith-disandro-a1a10216b/"><div class="animation"><i class="fa fa-linkedin hoveropacity"></i></div></a>
+    <p>Author: Faith DiSandro<br>
+  <a href="mailto:fdisandr@ucsd.edu">fdisandr@ucsd.edu</a></p>
+</footer>
+
+
+
+
+
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+
+
+
+  <script>
+    // TODO: Replace the following with your app's Firebase project configuration
+    // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
+    var firebaseConfig = {
+      apiKey: "AIzaSyDvgU7vyGoUTPoIxHLnI6lX3yC9B2KC4mY",
+      authDomain: "cse134bhw2-7a034.firebaseapp.com",
+      projectId: "cse134bhw2-7a034",
+      storageBucket: "cse134bhw2-7a034.appspot.com",
+      messagingSenderId: "651370244563",
+      appId: "1:651370244563:web:d4a218a4bbb304afef6726",
+    measurementId: "G-YZCDGZYS9D"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+</script>
+
+
+</body>
+</html>
